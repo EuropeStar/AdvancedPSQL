@@ -1,4 +1,5 @@
-idea/
+.idea/
+flyway/
 
 __pycache__/
 *.py[cod]
