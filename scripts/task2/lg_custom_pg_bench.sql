@@ -1,5 +1,5 @@
-\set rnd_int random(0, 100000)
+\setrandom rndint 1 100000
 
 begin;
-insert into t2_logged_table (id, message, created) VALUES (:rnd_int, md5(:rnd_int::text), current_date);
+insert into t2_logged_table (id, message, created) VALUES (:rndint, md5(:rndint::text), current_date);
 end;
