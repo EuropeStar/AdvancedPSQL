@@ -83,7 +83,7 @@ do instead insert into inh_part_5 values (new.id, new.name);
 create or replace rule redirect_isert_inh_table_6
 as on insert to inherited_hub_table
 where new.id between 500000 and 599999
-do instead insert into inh_part_3 values (new.id, new.name);
+do instead insert into inh_part_6 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_7
 as on insert to inherited_hub_table
