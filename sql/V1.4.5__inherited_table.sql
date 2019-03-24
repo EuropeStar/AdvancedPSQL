@@ -3,16 +3,16 @@ create table inherited_hub_table (
   name varchar(50)
 );
 
-create inh_part_1 () inherits (inherited_hub_table);
-create inh_part_2 () inherits (inherited_hub_table);
-create inh_part_3 () inherits (inherited_hub_table);
-create inh_part_4 () inherits (inherited_hub_table);
-create inh_part_5 () inherits (inherited_hub_table);
-create inh_part_6 () inherits (inherited_hub_table);
-create inh_part_7 () inherits (inherited_hub_table);
-create inh_part_8 () inherits (inherited_hub_table);
-create inh_part_9 () inherits (inherited_hub_table);
-create inh_part_10 () inherits (inherited_hub_table);
+create table inh_part_1 () inherits (inherited_hub_table);
+create table inh_part_2 () inherits (inherited_hub_table);
+create table inh_part_3 () inherits (inherited_hub_table);
+create table inh_part_4 () inherits (inherited_hub_table);
+create table inh_part_5 () inherits (inherited_hub_table);
+create table inh_part_6 () inherits (inherited_hub_table);
+create table inh_part_7 () inherits (inherited_hub_table);
+create table inh_part_8 () inherits (inherited_hub_table);
+create table inh_part_9 () inherits (inherited_hub_table);
+create table inh_part_10 () inherits (inherited_hub_table);
 
 alter table inh_part_1
 add constraint partition_check
