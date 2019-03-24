@@ -57,50 +57,50 @@ check (id >= 900000 and id < 1000000);
 
 create or replace rule redirect_isert_inh_table_1
 as on insert to inherited_hub_table
-where new.id between 0 and 100000
+where new.id between 0 and 99999
 do instead insert into inh_part_1 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_2
 as on insert to inherited_hub_table
-where new.id between 100000 and 200000
+where new.id between 100000 and 199999
 do instead insert into inh_part_2 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_3
 as on insert to inherited_hub_table
-where new.id between 200000 and 300000
+where new.id between 200000 and 299999
 do instead insert into inh_part_3 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_4
 as on insert to inherited_hub_table
-where new.id between 300000 and 400000
+where new.id between 300000 and 399999
 do instead insert into inh_part_4 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_5
 as on insert to inherited_hub_table
-where new.id between 300000 and 500000
+where new.id between 400000 and 499999
 do instead insert into inh_part_5 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_6
 as on insert to inherited_hub_table
-where new.id between 500000 and 600000
+where new.id between 500000 and 599999
 do instead insert into inh_part_3 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_7
 as on insert to inherited_hub_table
-where new.id between 600000 and 700000
+where new.id between 600000 and 699999
 do instead insert into inh_part_7 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_8
 as on insert to inherited_hub_table
-where new.id between 700000 and 800000
+where new.id between 700000 and 799999
 do instead insert into inh_part_8 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_9
 as on insert to inherited_hub_table
-where new.id between 800000 and 900000
+where new.id between 800000 and 899999
 do instead insert into inh_part_9 values (new.id, new.name);
 
 create or replace rule redirect_isert_inh_table_10
 as on insert to inherited_hub_table
-where new.id between 900000 and 1000000
+where new.id between 900000 and 999999
 do instead insert into inh_part_10 values (new.id, new.name);
