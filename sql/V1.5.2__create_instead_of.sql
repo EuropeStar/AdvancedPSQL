@@ -15,7 +15,7 @@ language plpgsql
 as $BODY$
   BEGIN
     if tg_op = 'INSERT' then
-      insert into table_for_inst_of values (NEW.type_name, NEW.value);
+      insert into table_for_inst_of values (NEW.type_name, NEW.sum);
     end if;
     return NEW;
   END;
