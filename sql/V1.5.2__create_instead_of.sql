@@ -23,19 +23,19 @@ $BODY$;
 
 
 create trigger trg_instead_of_dml
-  instead of insert on table_for_inst__view
+  instead of insert on table_for_inst_view
 for each row
 execute function fnc_trg_instead_of();
 
 
 insert into table_for_inst_of
-select 'A', generate_series from generate_series(20);
+select 'A', generate_series from generate_series(1, 20);
 
 insert into table_for_inst_of
-select 'B', generate_series from generate_series(40);
+select 'B', generate_series from generate_series(20, 40);
 
 insert into table_for_inst_of
-select 'C', generate_series from generate_series(10);
+select 'C', generate_series from generate_series(40, 70);
 
 insert into table_for_inst_of
-select 'D', generate_series from generate_series(30);
+select 'D', generate_series from generate_series(70, 100);
